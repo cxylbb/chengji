@@ -32,48 +32,6 @@
 | 前端 | 原生 HTML5 + CSS3 + JavaScript |
 | 架构 | 前后端分离，RESTful API |
 
-## 目录结构
-
-```
-gk/
-├── index.php              # 前台查询页面
-├── config.php             # 数据库与系统配置
-├── db.sql                 # 数据库建表脚本
-├── .htaccess              # 服务器安全配置
-├── admin/
-│   ├── index.php          # 后台首页（考生列表）
-│   ├── add_student.php    # 添加/编辑考生
-│   ├── settings.php       # 系统设置
-│   ├── login.php          # 后台登录
-│   ├── logout.php         # 退出登录
-│   ├── api/
-│   │   ├── login.php      # 登录 API
-│   │   ├── list_students.php  # 考生列表 API
-│   │   ├── add_student.php    # 添加考生 API
-│   │   ├── update_student.php # 更新考生 API
-│   │   ├── delete_student.php # 删除考生 API
-│   │   ├── subjects.php       # 成绩 CRUD API
-│   │   ├── settings.php       # 设置 API
-│   │   └── upload_logo.php    # Logo 上传 API
-│   ├── includes/
-│   │   ├── auth.php       # 认证与会话管理
-│   │   ├── csrf.php       # CSRF 防护
-│   │   └── security.php   # 安全工具函数
-│   └── assets/
-│       ├── css/admin.css  # 后台样式
-│       └── js/admin.js    # 后台脚本
-├── api/
-│   ├── query.php          # 前台成绩查询 API
-│   └── settings.php       # 前台设置获取 API
-├── assets/
-│   ├── css/style.css      # 前台样式
-│   ├── js/main.js         # 前台脚本
-│   └── uploads/           # 上传文件目录（Logo）
-└── install/
-    ├── index.php          # 安装向导
-    └── install.php        # 安装脚本
-```
-
 ## 安装部署
 
 ### 环境要求
